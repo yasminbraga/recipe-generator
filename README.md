@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+   🍲 Recipe Generator
+</h1>
 
-## Getting Started
+<h3 align="center">
+    Tired of not known what to cook? Generate a random meal.
+</h3>
 
-First, run the development server:
+<h4 align="center"> 
+	 Status: Finished
+</h4>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Screenshot](/screenshot.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Table of contents
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<p align="center">
+ <a href="#about">About</a> •
+ <a href="#features">Features</a> •
+ <a href="#layout">Layout</a> • 
+ <a href="#how-it-works">How it works</a> • 
+ <a href="#tech-stack">Tech Stack</a> • 
+ <a href="#author">Author</a> • 
+ <a href="#license">License</a>
+</p>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### About
 
-## Learn More
+This is a random recipe generator chalenge by [WebDevDaily](https://www.webdevdaily.io/dashboard/home) built with [Next.js](https://nextjs.org/).
 
-To learn more about Next.js, take a look at the following resources:
+### Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [x] Create responsive layout for mobile and desktop.
+- [x] Generate random meals using theMealDB API.
+- [x] View previously generated meals.
+- [x] Utilize localStorage to save meals to favorites.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Layout
 
-## Deploy on Vercel
+The application layout is available on [WebDevDaily](https://www.webdevdaily.io/projects/recipe-generator-app/514)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### How it works
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Should generate a random meal when clicked, return the last meal when click the back button and handle favorites meals.
+
+### 🛠 Tech Stack
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [Next.js](https://nextjs.org/)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
+- [Tailwindcss](https://tailwindcss.com/)
+- ContextAPI
+- LocalStorage
+- UseState
+- UseEffect
+
+### Author
+
+<a href="https://www.linkedin.com/in/yasminbragat/">
+ <img style="border-radius: 50%;" src="https://media.licdn.com/dms/image/C4D03AQGxGeqYTbr-qg/profile-displayphoto-shrink_200_200/0/1668014770690?e=1728518400&v=beta&t=g31f8Te8b3uTlWvaZfAJR23pP8AxCaVTLHO-XmOgHiw" width="100px;" alt="Yasmin Braga"/>
+ <br />
+ <sub><b>Yasmin Braga</b></sub></a> <a href="https://www.linkedin.com/in/yasminbragat/" title="Rocketseat"></a>
+ <br />
+
+[![Linkedin Badge](https://img.shields.io/badge/-Yasmin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/yasminbragat/)](https://www.linkedin.com/in/yasminbragat/)
+[![Gmail Badge](https://img.shields.io/badge/-yasminbragat.dev@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:yasminbragat.dev@gmail.com)](mailto:yasminbragat.dev.com)
+
+### License
+
+This project is under the license [MIT](./LICENSE).
+
+Made with love by Yasmin Braga 👋🏽 [Get in Touch!](https://www.linkedin.com/in/yasminbragat/)
