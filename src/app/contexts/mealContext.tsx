@@ -38,7 +38,9 @@ export const MealProvider = ({ children }: { children: ReactNode }) => {
   const [lastMeal, setLastMeal] = useState<MealType[] | []>([]);
   const [showModal, setShowModal] = useState(false);
   const [favorites, setFavorites] = useState<MealType[] | []>(
-    JSON.parse(localStorage.getItem("favorites") || "[]")
+    typeof window !== undefined
+      ? JSON.parse(localStorage.getItem("favorites") || "[]")
+      : []
   );
 
   const fetcher = async () => {
