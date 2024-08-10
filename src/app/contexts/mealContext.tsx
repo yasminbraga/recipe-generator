@@ -38,7 +38,7 @@ export const MealProvider = ({ children }: { children: ReactNode }) => {
   const [lastMeal, setLastMeal] = useState<MealType[] | []>([]);
   const [showModal, setShowModal] = useState(false);
   const [favorites, setFavorites] = useState<MealType[] | []>(
-    typeof window !== undefined
+    typeof window !== "undefined"
       ? JSON.parse(localStorage.getItem("favorites") || "[]")
       : []
   );
@@ -73,7 +73,7 @@ export const MealProvider = ({ children }: { children: ReactNode }) => {
   }, []);
 
   useEffect(() => {
-    if (typeof window !== undefined) {
+    if (typeof window !== "undefined") {
       localStorage.setItem("favorites", JSON.stringify(favorites));
     }
   }, [favorites]);
