@@ -15,7 +15,7 @@ const Card: React.FC = () => {
 
   return (
     <div>
-      <article className="bg-white lg:flex lg:flex-row rounded-2xl overflow-hidden lg:max-w-[800px] lg:my-10">
+      <article className="bg-white lg:flex lg:flex-row rounded-2xl overflow-hidden lg:m-12">
         <MealImage srcImage={meal.strMealThumb} altImage={meal.strMeal} />
         <section className="p-5">
           <h2 className="text-xl font-semibold">{meal.strMeal}</h2>

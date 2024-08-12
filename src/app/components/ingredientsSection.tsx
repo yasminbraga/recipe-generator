@@ -8,7 +8,7 @@ const IngredientsSection: FC = () => {
   return (
     <ul className="flex flex-col flex-wrap lg:flex-row p-5">
       {items.map((item) => (
-        <li className="list-disc lg:w-1/3 " key={item}>
+        <li className="list-disc lg:w-1/3" key={item}>
           {item}
         </li>
       ))}
